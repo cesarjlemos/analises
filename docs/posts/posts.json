@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-12-07-analiseraisreal/",
+    "title": "Analisando dados da RAIS",
+    "description": "Esse estudo tem como objetivo analisar os salários na base da RAIS. Projeto feito na semana Data Science da Curso-R.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-12-07",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\nNesse relatório estamos interessados em responder a pergunta: “Quanto ganha um cientista de dados?”\r\nPara isso, vamos utilizar a base da RAIS anonimizada.\r\nAcessando os dados da RAIS\r\nVamos utilizar [o datalake da iniciativa base dos dados] (https://basedosdados.org). Abaixo está o código que carrega as 5 primeiras linhas da tabela de microdados.\r\n\r\n# Source:   lazy query [?? x 66]\r\n# Database: BigQueryConnection\r\n# ... with 66 variables: ano <int64>, sigla_uf <chr>,\r\n#   id_municipio <chr>, tipo_vinculo <chr>,\r\n#   vinculo_ativo_3112 <int64>, tipo_admissao <chr>,\r\n#   mes_admissao <int64>, mes_desligamento <int64>,\r\n#   motivo_desligamento <chr>, causa_desligamento_1 <chr>,\r\n#   causa_desligamento_2 <chr>, causa_desligamento_3 <chr>,\r\n#   faixa_tempo_emprego <chr>, tempo_emprego <dbl>,\r\n#   faixa_horas_contratadas <chr>,\r\n#   quantidade_horas_contratadas <int64>,\r\n#   id_municipio_trabalho <chr>, quantidade_dias_afastamento <int64>,\r\n#   indicador_cei_vinculado <int64>,\r\n#   indicador_trabalho_parcial <int64>,\r\n#   indicador_trabalho_intermitente <int64>,\r\n#   faixa_remuneracao_media_sm <chr>,\r\n#   valor_remuneracao_media_sm <dbl>, valor_remuneracao_media <dbl>,\r\n#   faixa_remuneracao_dezembro_sm <chr>,\r\n#   valor_remuneracao_dezembro_sm <dbl>,\r\n#   valor_remuneracao_janeiro <dbl>,\r\n#   valor_remuneracao_fevereiro <dbl>, valor_remuneracao_marco <dbl>,\r\n#   valor_remuneracao_abril <dbl>, valor_remuneracao_maio <dbl>,\r\n#   valor_remuneracao_junho <dbl>, valor_remuneracao_julho <dbl>,\r\n#   valor_remuneracao_agosto <dbl>, valor_remuneracao_setembro <dbl>,\r\n#   valor_remuneracao_outubro <dbl>,\r\n#   valor_remuneracao_novembro <dbl>,\r\n#   valor_remuneracao_dezembro <dbl>, tipo_salario <chr>,\r\n#   valor_salario_contratual <dbl>, subatividade_ibge <chr>,\r\n#   subsetor_ibge <chr>, cbo_1994 <chr>, cbo_2002 <chr>,\r\n#   cnae_1 <chr>, cnae_2 <chr>, cnae_2_subclasse <chr>,\r\n#   faixa_etaria <chr>, idade <int64>,\r\n#   grau_instrucao_1985_2005 <chr>, grau_instrucao_apos_2005 <chr>,\r\n#   nacionalidade <chr>, sexo <chr>, raca_cor <chr>,\r\n#   indicador_portador_deficiencia <int64>, tipo_deficiencia <chr>,\r\n#   ano_chegada_brasil <int64>, tamanho_estabelecimento <chr>,\r\n#   tipo_estabelecimento <chr>, natureza_juridica <chr>,\r\n#   indicador_simples <int64>, bairros_sp <chr>, distritos_sp <chr>,\r\n#   bairros_fortaleza <chr>, bairros_rj <chr>,\r\n#   regioes_administrativas_df <chr>\r\n\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-12-07T21:33:17-03:00",
+    "input_file": "analiseraisreal.knit.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to Blog Cesar",
     "description": "Welcome to our new blog, Blog Cesar. We hope you enjoy \nreading what we have to say!",
@@ -11,9 +28,9 @@
     ],
     "date": "2021-12-06",
     "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
+    "contents": "\r\nEsse é o meu primeiro projeto\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-12-06T21:55:32-03:00",
+    "last_modified": "2021-12-06T21:57:00-03:00",
     "input_file": "welcome.knit.md"
   }
 ]

@@ -1,0 +1,48 @@
+---
+title: "Analisando dados da RAIS"
+description: |
+  Esse estudo tem como objetivo analisar os salários na base da RAIS. Projeto feito na semana Data Science da Curso-R.
+author:
+  - name: Nora Jones
+    url: https://example.com/norajones
+date: 2021-12-07
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r message=FALSE, warning=FALSE}
+# Pacotes
+library(tidyverse)
+library(bigrquery)
+```
+
+
+Nesse relatório estamos interessados em responder a pergunta: "Quanto ganha um cientista de dados?" 
+
+Para isso, vamos utilizar a base da RAIS anonimizada.
+
+# Acessando os dados da RAIS
+
+Vamos utilizar [o datalake da iniciativa base dos dados] (https://basedosdados.org). Abaixo está o código que carrega as 5 primeiras linhas da tabela de microdados.
+
+
+```{r}
+  
+con <- dbConnect(
+  bigquery(),
+  project = "basedosdados",
+  dataset = "br_me_rais",
+  billing = "Projeto Semana DSA Curso-R"
+)
+
+tbl(con, "microdados_vinculos") %>% 
+  head(5)
+
+```
+
